@@ -74,10 +74,26 @@
   &__list-search {
     width: 20px;
     padding-top: 5px;
+    svg {
+      fill: $color-text;
+      width: 20px;
+      height: 20px;
+      transition: all 0.3s ease;
+      &:hover {
+        fill: $green;
+      }
+    }
   }
   &__list-link {
     font-size: 20px;
     @extend %openSans-semibold;
+    transition: all 0.3s ease;
+    &:hover {
+      color: $green;
+    }
+  }
+  &__btn {
+    display: none;
   }
 }
 .scroll__btn {
@@ -513,7 +529,7 @@
     justify-content: space-between;
     max-width: 960px;
     width: 100%;
-    margin: 0 auto 40px;
+    margin: 0 auto 50px;
   }
   &__item {
     max-width: 260px;
@@ -521,6 +537,72 @@
     font-size: 20px;
     line-height: 30px;
     @extend %openSans-semibold;
+    text-align: center;
+    svg {
+      width: 106px;
+      height: 106px;
+    }
+  }
+  &__form {
+    max-width: 1030px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  &__input {
+    border-radius: 10px;
+    padding: 20px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    line-height: 30px;
+    @extend %openSans-semibold;
+    color: #4d4d4d;
+  }
+  &__form-name,
+  &__form-mail {
+    width: 500px;
+    height: 85px;
+    margin-bottom: 30px;
+  }
+  &__form-name {
+    margin-right: auto;
+  }
+  &__form-mail {
+    margin-left: 25px;
+  }
+  &__form-text {
+    width: 1030px;
+    height: 320px;
+    margin-bottom: 33px;
+    resize: none;
+  }
+  &__btn {
+    width: 220px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    left: 100%;
+    transform: translateX(-100%);
+    text-transform: uppercase;
+    font-size: 20px;
+    line-height: 30px;
+    @extend %roboto-bold;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: $green;
+      border-color: $green;
+      color: #fff;
+    }
+  }
+}
+.footer {
+  &__text {
+    font-size: 20px;
+    line-height: 30px;
+    @extend %roboto-bold;
     text-align: center;
   }
 }

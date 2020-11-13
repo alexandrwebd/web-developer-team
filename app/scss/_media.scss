@@ -1,0 +1,232 @@
+/*Responsive*/
+
+@media screen and (max-width: 1280px) {
+}
+
+/* 992px - 1200px */
+@media screen and (max-width: 1200px) {
+  .header__content-title {
+    font-size: 48px;
+    line-height: 70px;
+  }
+}
+
+// 1000
+
+/* 768px - 992px */
+@media screen and (max-width: 992px) {
+  body.lock {
+    overflow: hidden;
+  }
+  .section {
+    padding: 90px 0 100px;
+  }
+  .title__box {
+    margin-bottom: 70px;
+  }
+  .about {
+    padding-top: 90px;
+  }
+  .about__items {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about__item {
+    min-height: 280px;
+  }
+
+  .menu {
+    // position: relative;
+  }
+  .menu__list {
+    position: absolute;
+    display: block;
+    top: 120px;
+    padding-top: 30px;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.9);
+    transform: translateX(-100%);
+    transition: all 0.5s ease;
+    &.menu__list--active {
+      transform: translateX(0);
+    }
+  }
+  .menu__list-search {
+    // position: absolute;
+    // left: 50%;
+    // transform: translateX(-50%);
+    margin: 0 auto;
+    svg {
+      fill: #fff;
+    }
+  }
+  .menu__list-item {
+    margin-bottom: 10px;
+  }
+  .menu__list-item + .menu__list-item {
+    padding-left: 0;
+  }
+  .menu__list-link {
+    font-size: 24px;
+    color: #fff;
+    width: 100%;
+    padding: 20px 0;
+    &:hover {
+      transform: translateX(10px);
+    }
+  }
+  .menu__btn {
+    display: block;
+    position: relative;
+    width: 50px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    top: -3px;
+    &.menu__btn--active {
+      span {
+        background-color: #fff;
+        &::before {
+          transform: rotate(45deg);
+          top: 17.5px;
+        }
+        &::after {
+          transform: rotate(-45deg);
+          bottom: 17.5px;
+        }
+      }
+    }
+    span {
+      width: 100%;
+      height: 4px;
+      background-color: #000;
+      transition: all 0.3s ease;
+      &::before,
+      &::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        background-color: #000;
+        transition: all 0.3s ease;
+      }
+      &::before {
+        top: 0;
+        left: 0;
+      }
+      &::after {
+        bottom: 0;
+        left: 0;
+      }
+    }
+  }
+}
+
+/* 576px - 768px */
+@media screen and (max-width: 768px) {
+  .title__box .title {
+    font-size: 28px;
+    line-height: 32px;
+  }
+  .header__content-title {
+    font-size: 34px;
+  }
+  .header__content-subtitle {
+    font-size: 16px;
+  }
+  .header__btn-items {
+    justify-content: space-evenly;
+  }
+  .header-btn {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+}
+
+/* 320px - 576px */
+@media screen and (max-width: 576px) {
+  .title__box .title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  body {
+    font-size: 14px;
+    line-height: 21px;
+  }
+  .about {
+    padding-top: 70px;
+  }
+  .about__item {
+    min-height: 250px;
+  }
+  .title__box {
+    margin-bottom: 50px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__btn-items {
+    max-width: 60%;
+    flex-direction: column;
+  }
+  .header-btn {
+    margin-bottom: 30px;
+    font-size: 12px;
+  }
+  .header__content-title {
+    font-size: 30px;
+    line-height: 39px;
+  }
+  .header__content-subtitle {
+    font-size: 16px;
+    line-height: 25px;
+  }
+  .header__content {
+    padding-top: 120px;
+  }
+  .scroll__btn {
+    bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .header__content {
+    padding-top: 80px;
+  }
+  .scroll__btn {
+    bottom: 20px;
+  }
+  .header__btn-items {
+    margin: 80px auto 0;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .header__content {
+    padding-top: 40px;
+  }
+  .header__btn-items {
+    margin: 40px auto 0;
+  }
+  .header-btn {
+    margin-bottom: 20px;
+  }
+  .menu__list-item {
+    margin-bottom: 0;
+  }
+  .scroll__btn {
+    display: none;
+  }
+  .menu__list {
+    padding-top: 10px;
+  }
+}
