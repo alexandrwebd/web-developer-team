@@ -9,8 +9,39 @@
     font-size: 48px;
     line-height: 70px;
   }
+  .services__items {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  .worcs__items-img {
+    justify-content: space-evenly;
+  }
+  .worcs__item-img {
+    margin: 0 10px 20px;
+  }
+  .price__item-card {
+    margin: 0 10px 30px;
+  }
+  .team .team__slider .slick-dots {
+    max-width: 153px;
+  }
+  .blog__item {
+    margin-bottom: 20px;
+  }
 }
 
+@media screen and (max-width: 1060px) {
+  .contact__input {
+    max-width: 100%;
+  }
+  .contact__form-mail {
+    margin-left: 0;
+  }
+  .contact__btn {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
 // 1000
 
 /* 768px - 992px */
@@ -46,6 +77,7 @@
     left: 0;
     height: 100vh;
     width: 100%;
+    z-index: 2;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.9);
     transform: translateX(-100%);
@@ -128,6 +160,33 @@
       }
     }
   }
+  .price__items-card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .blog__item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .blog__item-subtitle {
+    max-width: 290px;
+    margin: 0 auto;
+  }
+  .blog__item:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .blog__items {
+    margin-bottom: 70px;
+  }
+  .blog__item--margin {
+    margin: 0;
+  }
+}
+@media screen and (max-width: 900px) {
+  .team .team__slider {
+    // align-items: center;
+  }
 }
 
 /* 576px - 768px */
@@ -148,9 +207,78 @@
   .header-btn {
     font-size: 16px;
   }
+  .btn {
+    font-size: 16px;
+  }
+  .section {
+    padding: 70px 0 80px;
+  }
+  .box__btn-items {
+    max-width: 100%;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+  }
+  .worcs__items-img {
+    margin-bottom: 50px;
+  }
+  .blog__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .blog__item-subtitle {
+    font-size: 16px;
+    line-height: 24px;
+    max-width: 270px;
+  }
+  .contact__item {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact__input {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .contact__item {
+    svg {
+      width: 80px;
+      height: 80px;
+    }
+  }
+  .contact__form-name,
+  .contact__form-mail {
+    height: 70px;
+    margin-bottom: 25px;
+  }
+  .contact__form-text {
+    height: 250px;
+  }
+  .contact__btn {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .footer__text {
+    font-size: 16px;
+    line-height: 24px;
+  }
 }
 
 @media screen and (max-width: 640px) {
+  .box__btn-items {
+    max-width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 70px;
+  }
+  .box__btn-item {
+    margin: 0 10px 20px;
+    max-width: 200px;
+    width: 100%;
+    text-align: center;
+  }
+  .contact__item {
+    font-size: 14px;
+    line-height: 21px;
+  }
 }
 
 /* 320px - 576px */
@@ -171,6 +299,35 @@
   }
   .title__box {
     margin-bottom: 50px;
+  }
+  .price__item-main {
+    padding: 30px 0;
+  }
+  .price__item-card {
+    padding-bottom: 50px;
+  }
+  .price__item-title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .price__item-num span {
+    font-size: 38px;
+    line-height: 45px;
+  }
+  .price__item-header {
+    padding-top: 30px;
+    padding-bottom: 10px;
+  }
+  .blog__items {
+    margin-bottom: 40px;
+  }
+  .contact__info {
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto 30px;
+  }
+  .contact__item {
+    margin-bottom: 20px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -196,6 +353,24 @@
   .scroll__btn {
     bottom: 30px;
   }
+  .section {
+    padding: 60px 0;
+  }
+  .services__item-text {
+    padding: 0 10px;
+  }
+  .services__item {
+    min-height: 420px;
+  }
+  .box__btn-items {
+    margin-bottom: 50px;
+  }
+  .box__btn-item {
+    max-width: 100%;
+  }
+  .worcs__items-img {
+    margin-bottom: 40px;
+  }
 }
 
 @media screen and (max-width: 380px) {
@@ -207,6 +382,17 @@
   }
   .header__btn-items {
     margin: 80px auto 0;
+  }
+  .price__item-texst {
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+  .price__item-card {
+    padding-bottom: 35px;
+  }
+  .price__item-main {
+    padding: 25px 0;
   }
 }
 
@@ -229,4 +415,7 @@
   .menu__list {
     padding-top: 10px;
   }
+  // .services__item {
+  //   max-width: 320px;
+  // }
 }

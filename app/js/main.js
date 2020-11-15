@@ -6,6 +6,26 @@ $(function () {
     arrows: false,
     dots: true,
     autoplay: 3000,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          centerMode: true,
+          // variableWidth: true,
+        },
+      },
+      {
+        breakpoint: 900,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          centerMode: true,
+          variableWidth: true,
+        },
+      },
+    ],
   })
 })
 
