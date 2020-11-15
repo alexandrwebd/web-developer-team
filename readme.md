@@ -1,3 +1,3 @@
-# Company business card website
+# Web development team site
 
-The construction company provides its services for interior and exterior work of residential premises
+he team is professionally and efficiently engaged in the development and promotion of turnkey websites
