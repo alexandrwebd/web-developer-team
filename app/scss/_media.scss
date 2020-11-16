@@ -260,6 +260,15 @@
     font-size: 16px;
     line-height: 24px;
   }
+  .header__top {
+    min-height: 100px;
+  }
+  .header__top-inner {
+    padding-top: 35px;
+  }
+  .menu__list {
+    top: 100px;
+  }
 }
 
 @media screen and (max-width: 640px) {

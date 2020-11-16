@@ -59,3 +59,18 @@ $menuBtn.addEventListener('click', () => {
   $menuList.classList.toggle('menu__list--active')
   $body.classList.toggle('lock')
 })
+
+// Search modal
+
+const $search = document.querySelector('.menu__list-search')
+const $closeSearch = document.querySelector('.closebtn')
+
+function openSearch(e) {
+  document.getElementById('myOverlay').style.display = 'block'
+}
+function closeSearch() {
+  document.getElementById('myOverlay').style.display = 'none'
+}
+
+$search.addEventListener('click', openSearch)
+$closeSearch.addEventListener('click', closeSearch)
